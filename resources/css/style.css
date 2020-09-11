@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Whole Doc */
+body{
+    width: 100vw;
+    height: auto;
+    background: url(../img/back.jpg)no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    width: 40%; 
+    margin: 40px auto 85px auto;
+    background: #9b59b6;
+    padding: 40px;
+    border-radius: 5px;
+    min-width: 300px;
+}
+
+/* Radio Buttons */
+.container .radiobtns{
+    background: #bdc3c7;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.radiobtns .choose{
+    width: 70px;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    vertical-align: middle;
+    color: #2c3e50;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.radiobtns .choose input[type="radio"]{
+    display: none;
+}
+
+.radiobtns .choose .checkmark{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid #2c3e50;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in;
+}
+
+.radiobtns .choose .checkmark::after{
+    content: '';
+    height: 10px;
+    width: 10px;
+    background: #2c3e50;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: all 0.5s ease-in;
+}
+
+.radiobtns .choose input[type="radio"]:checked ~ .checkmark::after{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* For Numbers */
+.container .fornum{
+    background: #bdc3c7;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.container .fornum input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background: #95a5a6;
+    font-size: 0.9rem;
+    color: #2c3e50;
+    transition: all 0.4s ease-in;
+}
+
+.container .fornum input:focus{
+    font-size: 1rem;
+}
+
+.container .fornum input:focus::placeholder{
+    color: transparent;
+}
+
+/* Output */
+.container .output{
+    background: #bdc3c7;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: all 0.4s ease-in;
+}
+
+.container .output p{
+    text-align: left;
+    color: #2c3e50;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+/* Buttons */
+.container .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .btns a{
+    width: 100px;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 10px 20px;
+    background: #95a5a6;
+    color: #2c3e50;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.4s ease-in;
+}
+
+.container .btns a:hover{
+    background: #fff;
+}
+
+/* For SVG Logo */
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.logo svg{
+    animation: fill 2s ease forwards 4s;
+}
+
+.logo svg path:nth-child(1){
+    stroke-dasharray: 355.7261657714844;
+    stroke-dashoffset: 355.7261657714844;
+    animation: line-anim 2s ease forwards;
+}
+
+.logo svg path:nth-child(2){
+    stroke-dasharray: 269.989990234375;
+    stroke-dashoffset: 269.989990234375;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+
+.logo svg path:nth-child(3){
+    stroke-dasharray: 383.3763427734375;
+    stroke-dashoffset: 383.3763427734375;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+
+.logo svg path:nth-child(4){
+    stroke-dasharray: 310.0673522949219;
+    stroke-dashoffset: 310.0673522949219;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+
+.logo svg path:nth-child(5){
+    stroke-dasharray: 249.33624267578125;
+    stroke-dashoffset: 249.33624267578125;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+
+.logo svg path:nth-child(6){
+    stroke-dasharray: 172.39739990234375;
+    stroke-dashoffset: 172.39739990234375;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+
+.logo svg path:nth-child(7){
+    stroke-dasharray: 218.12271118164062;
+    stroke-dashoffset: 218.12271118164062;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+
+.logo svg path:nth-child(8){
+    stroke-dasharray: 261.73681640625;
+    stroke-dashoffset: 261.73681640625;
+    animation: line-anim 2s ease forwards 2.1s;
+}
+
+.logo svg path:nth-child(9){
+    stroke-dasharray: 176.43907165527344;
+    stroke-dashoffset: 176.43907165527344;
+    animation: line-anim 2s ease forwards 2.4s;
+}
+
+.logo svg path:nth-child(10){
+    stroke-dasharray: 179.95748901367188;
+    stroke-dashoffset: 179.95748901367188;
+    animation: line-anim 2s ease forwards 2.7s;
+}
+
+.logo svg path:nth-child(11){
+    stroke-dasharray: 151.25601196289062;
+    stroke-dashoffset: 151.25601196289062;
+    animation: line-anim 2s ease forwards 3s;
+}
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: #fff;
+    }
+}
+
+/* Footer */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(155, 89, 182, 0.5);
+    padding: 12px 30px;
+}
+
+footer p{
+    font-size: 0.8rem;
+    color: #fff;
+    opacity: 0.8;
+}
