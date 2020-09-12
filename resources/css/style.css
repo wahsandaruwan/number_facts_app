@@ -253,6 +253,100 @@ body{
     }
 }
 
+/* Modals */
+/* Both About and Contact Me */
+.modal-container-about,
+.modal-container-contact{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(231, 76, 60, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in;
+}
+
+.modal-a,
+.modal-c{
+    background: #b871d4;
+    width: 500px;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.modal-a h2,
+.modal-c h2{
+    font-size: 1.3rem;
+    padding: 10px 0;
+}
+
+.modal-a > a,
+.modal-c > a{
+    width: 150px;
+    height: 20px;
+    text-decoration: none;
+    background: #2c3e50;
+    padding: 5px 20px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: #fff;
+    transition: all 0.3s ease-in;
+}
+
+.modal-a > a:hover,
+.modal-c > a:hover{
+    color: #2c3e50;
+    background: #fff;
+}
+
+/* Only About */
+.modal-a p{
+    font-size: 0.9rem;
+    padding-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* Only Contact Me */
+.modal-c .cont{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-c .cont a{
+    text-decoration: none;
+    color: #fff;
+    background: #2c3e50;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: all 0.4s ease-in;
+}
+
+.modal-c .cont a:hover{
+    color: #9b59b6;
+    background: #fff;
+}
+
+.modal-c .cont a i{
+    font-size: 1.5rem;
+}
+
+.show-modal{
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /* Footer */
 footer{
     position: fixed;

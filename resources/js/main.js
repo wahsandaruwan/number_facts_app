@@ -26,6 +26,7 @@ window.onload = function(){
             }
             xhr.send();
         }
+        // If Empty
         else{
             document.getElementById("out").innerHTML = "Your Input related Fact will be available here!";
         }
