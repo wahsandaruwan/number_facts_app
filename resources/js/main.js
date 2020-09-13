@@ -1,8 +1,12 @@
 // Run when page loads
 window.onload = function(){
+    // Clear input
+    document.getElementById("ui").value = "";
+    // Reset radio to default
+    document.getElementById("trivia").checked = true;
     // Reset input and output elements when radio check
     clearInputOutput();
-    // Set placeholder of input
+    // Set placeholder of input when radio check
     setPlaceholder();
     // Get letters while typing
     document.getElementById("ui").addEventListener("keyup", function(event){
