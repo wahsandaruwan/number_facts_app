@@ -18,12 +18,23 @@ body{
 }
 
 .container{
+    position: relative;
     width: 40%; 
     margin: 40px auto 85px auto;
     background: #9b59b6;
     padding: 40px;
     border-radius: 5px;
     min-width: 300px;
+    transform: scale(0);
+    /* Animation */
+    animation: c1 2s forwards ease-out;
+}
+
+/* Animation for main container */
+@keyframes c1{
+    to{
+        transform: scale(1);
+    }
 }
 
 /* Radio Buttons */
